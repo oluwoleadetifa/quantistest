@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "quantis.hpp": "c",
+        "quantis.h": "c"
+    }
+}

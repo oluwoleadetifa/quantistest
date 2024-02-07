@@ -1,8 +1,8 @@
 #include "/home/wole/Documents/pcie-chip-20.2.4/pcie-chip-20.2.4-linux/Libs-Apps/Quantis/Quantis.h"
-#include <float.h>
-#include <ctype.h>
 #include <stdio.h>
-#include <stdlib.h>
+
+// Function prototype
+static int ReadInt();
 
 int main(QuantisDeviceType deviceType){
   int deviceNumber = 0;
@@ -16,5 +16,6 @@ int main(QuantisDeviceType deviceType){
 static int ReadInt(){
   int deviceNumber = 0;
   QuantisDeviceType deviceType; 
-  QuantisReadInt(deviceType, deviceNumber, 0);
-}
+  int result = QuantisReadInt(deviceType, deviceNumber, 0);
+  return result;
+  }
